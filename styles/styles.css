@@ -1,0 +1,19 @@
+@import url("fonts.css");
+
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Geist Sans", sans-serif !important;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
