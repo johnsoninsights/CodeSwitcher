@@ -23,9 +23,107 @@ body {
   padding: 2px 0;
   justify-content: space-between;
   align-items: center;
-  border-bottom: linear-gradient(180deg, #000000, #181818);
+  border-bottom: 1px solid #323232;
+  background: linear-gradient(180deg, #000000, #181818);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 24px;
+  background: -webkit-linear-gradient(280deg, #ffffff, #4d4d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0;
+  margin: 0 auto;
+  transition: all 0.2 linear;
+}
+
+.header__inner-left {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.header__nav.active {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.header__link {
+  color: #8a8a8a;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header__link:hover {
+  color: #fff;
+}
+
+.header__auth {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  padding: 20px 0;
+}
+
+.header__button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Geist Sans", sans-serif;
+  border-radius: 0.5rem;
+  border: 1px solid #525252;
+  padding: 10px 20px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.header__button:hover {
+  background-color: #262626;
+  color: #fff;
+  border: 1px solid #a4a4a4;
+}
+
+.header__button--sign-in {
+  background-color: #035600;
+}
+
+.mobile-menu-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
 }
