@@ -117,6 +117,142 @@ body {
   color: #fff;
 }
 
+.container {
+  position: relative;
+  top: 5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 90px 0;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+
+.container__title {
+  font-size: 55px;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+.container__description {
+  font-size: 18px;
+  font-family: "Geist Sans", sans-serif;
+  color: #bbb;
+  margin: 20px 0;
+}
+
+.container__button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  font-family: "Geist Sans", sans-serif;
+  font-size: 16px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+  border-radius: 8px;
+  color: #222;
+}
+
+.code-container {
+  background: radial-gradient(#444444, #000000);
+  border: 1px solid #282828;
+  border-radius: 10px;
+  padding: 25px 0 0 0;
+  width: 100%;
+  max-width: 375px;
+  margin: 120px auto 0 auto;
+}
+
+@media (min-width: 500px) {
+  .code-container {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .code-container {
+    max-width: 960px;
+  }
+}
+
+.code-container__tabs {
+  display: flex;
+  justify-content: start;
+  border-radius: 5px;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0 10px;
+}
+
+.code-container__tab {
+  background-color: #121212;
+  padding: 10px 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #323232;
+  color: #4d4d4d;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.code-container__tab--active {
+  color: #d2d2d2;
+  background: radial-gradient(circle, #2f2f2f, #121212);
+}
+
+.code-container__icon {
+  font-size: 20px;
+  filter: grayscale(100%);
+}
+
+.code-container__content {
+  position: relative;
+  background: linear-gradient(180deg, #191919, #000000);
+  border-radius: 10px;
+  padding: 20px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.code-container__code {
+  display: none;
+  background-color: transparent !important;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-container__code--active {
+  display: block;
+}
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 @media (min-width: 500px) {
   .header__inner {
     display: flex;
