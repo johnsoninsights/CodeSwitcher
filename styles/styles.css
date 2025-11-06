@@ -266,6 +266,15 @@ pre[class*="language-"].line-numbers > code {
   text-align: right;
 }
 
+/*FOOTER*/
+.footer {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
 @media (min-width: 500px) {
   .header__inner {
     display: flex;
