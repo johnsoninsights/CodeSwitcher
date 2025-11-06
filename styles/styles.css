@@ -253,6 +253,11 @@ pre[class*="language-"].line-numbers > code {
   user-select: none;
 }
 
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
 @media (min-width: 500px) {
   .header__inner {
     display: flex;
