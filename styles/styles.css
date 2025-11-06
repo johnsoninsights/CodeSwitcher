@@ -153,6 +153,19 @@ body {
   color: #222;
 }
 
+.container__button:hover {
+  background-color: #262626;
+  border: 1px solid #d7d7d7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container__button.container__button--view-docs {
+  background: transparent;
+  color: white;
+  border: 1px solid transparent;
+}
+
 .code-container {
   background: radial-gradient(#444444, #000000);
   border: 1px solid #282828;
